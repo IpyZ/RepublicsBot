@@ -29,7 +29,7 @@ client.on('message', msg => {
 						russianPrisonWallHealthLevel = russianPrisonWallHealthLevel - 10;
 						msg.reply('Odebrano murowi 10 pkt wytrzymałości...');
 						if(russianPrisonWallHealthLevel <= 0) {
-							prisons = msg.guild.members.filter(member => member.roles.find(r => r.name == 'Skazany obywatel autorytaryzmu'));
+							var prisons = msg.guild.members.filter(member => member.roles.find(r => r.name == 'Skazany obywatel autorytaryzmu'));
 							prisons.forEach((member, key) => member.removeRole('569882651197046785'));
 							prisons.forEach((member, key) => member.addRole('569865289785933824'));
 							msg.reply('Mur został zniszczony...');
@@ -39,7 +39,7 @@ client.on('message', msg => {
 						americanPrisonWallHealthLevel = americanPrisonWallHealthLevel - 10;
 						msg.reply('Odebrano murowi 10 pkt wytrzymałości...');
 						if(americanPrisonWallHealthLevel <= 0) {
-							prisons = msg.guild.members.filter(member => member.roles.find(r => r.name == 'Skazany obywatel demokratyzmu'));
+							var prisons = msg.guild.members.filter(member => member.roles.find(r => r.name == 'Skazany obywatel demokratyzmu'));
 							prisons.forEach((member, key) => member.removeRole('569882900699283508'));
 							prisons.forEach((member, key) => member.addRole('569864782149189652'));
 							msg.reply('Mur został zniszczony...');
@@ -77,7 +77,7 @@ client.on('message', msg => {
 						msg.reply('Jeżeli imperator nie zrobi uniku, zabijesz go w ciągu 5 sekund...');
 						setTimeout(function() {
 							if(russianPresidentWillAlive == false) {
-								imperators = msg.guild.members.filter(member => member.roles.find(r => r.name == 'Imperator'));
+								var imperators = msg.guild.members.filter(member => member.roles.find(r => r.name == 'Imperator'));
 								imperators.forEach((member, key) => member.removeRole('569864652369035284'));
 								msg.reply('Imperator został zabity...');
 							}
