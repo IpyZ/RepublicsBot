@@ -1,12 +1,13 @@
 {
-  "name": "Republics Bot",
-  "description": "none",
+  "name": "Example",
+  "description": "Example",
   "version": "0.0.1",
   "main": "RepublicsBot.js",
-  "scripts" {
+  "scripts": {
     "start": "node RepublicsBot.js"
   },
-  "dependencies" {
-    "discord.js": "11.4.2"
+  "dependencies": {
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
   }
 }
