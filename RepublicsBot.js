@@ -9,7 +9,7 @@ var americanPrisonWallHealthLevel = 100;
 var russianPresidentWillAlive = false;
 
 client.on('ready', () => {
-	console.log(`Logged in as ${client.user.tag}`);
+	console.log('Jestem gogtowy!');
 });
 
 function repairWall(who) {
